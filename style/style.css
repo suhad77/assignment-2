@@ -22,6 +22,7 @@ p {
     color: #727272;
 }
 
+/* menu css start  */
 header {
     background: rgba(255, 144, 14, 0.1);
 }
@@ -50,7 +51,7 @@ header {
     font-size: 18px;
     color: #424242;
 }
-
+/* header css start  */
 .header-detiles {
     padding-top: 120px;
     text-align: center;
@@ -150,10 +151,12 @@ header {
     color: #131313;
     margin-bottom: 10px;
 }
-.about-img{
+
+.about-img {
     position: relative;
 }
 
+/* exprience css start  */
 .experience {
     padding: 45px 42px;
     background-color: #FF900E;
@@ -175,11 +178,141 @@ header {
     color: #FFFFFF;
 }
 
+/* some facts css start  */
+.some-facts {
+    margin-top: 130px;
+    margin-bottom: 180px;
+}
+
+.some-facts-heading {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+.some-facts-discription {
+    color: #727272;
+}
+
+.some-facts-item {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.some-item {
+    padding: 46px 36px 60px;
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+    margin-top: 100px;
+}
+
+.some-item:hover {
+    transform: rotate(45deg);
+}
+
+.item-count {
+    padding: 10px 0 5px;
+    font-size: 45px;
+    color: #424242;
+}
+
+.item-count p {
+    font-size: 20px;
+    color: #727272;
+}
+/* sponspors css start  */
+.our-sponspors {
+    text-align: center;
+}
+
+.shop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop img {
+    filter: grayscale(100%);
+}
+
+.sponspors-heading {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+.sponspors-discription {
+    color: #727272;
+    padding: 24px 0 50px;
+}
+/* service css start  */
+.service-item {
+    display: flex;
+    gap: 30px;
+}
+
+.providing-service {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.providing-service-heading {
+    font-weight: 700;
+    font-size: 48px;
+    color: #131313;
+    margin-bottom: 71px;
+}
+
+.service-card {
+    padding: 54px 22px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 55px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.service-card .design {
+    font-size: 57px;
+}
+
+.service-item-heading {
+    padding: 49px 0 20px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #424242;
+}
+
+.service-item-description {
+    padding-bottom: 25px;
+
+}
+.service-card a{
+    color: #FF5733;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* footer css start  */
+
+.footer-bg {
+    margin: 130px 0 216px;
+    background: #FFF4E7;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-discription {
+    font-size: 20px;
+    color: #424242;
+    padding: 39px 0;
+}
 
 
-
-
-
+/* media query seaction  */
 
 @media only screen and (max-width: 600px) {
     .container {
@@ -208,7 +341,35 @@ header {
         padding-left: 25px;
         padding-top: 15px;
     }
-    .about-item{
+
+    .about-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+
+    .some-facts-item {
+        flex-direction: column;
+    }
+
+    .shop {
+        flex-direction: column;
+    }
+
+    .shop img {
+        padding: 20px 0;
+    }
+
+    .experience {
+        bottom: 0;
+        left: 0;
+        position: relative;
+    }
+    .service-item{
         flex-direction: column;
     }
 
